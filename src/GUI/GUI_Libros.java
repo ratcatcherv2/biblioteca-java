@@ -24,6 +24,7 @@ public class GUI_Libros extends javax.swing.JFrame {
     private static Libro[] ListaLibros;
     public GUI_Libros() {
         initComponents();
+        txt_codigo.setVisible(false);
         this.setLocationRelativeTo(null);
         LibroArray.agregar(new Libro(1,"El Alquimista","HP. LOVECRAFT","34234-56665-33"));
         LibroArray.agregar(new Libro(2,"Carrie","STEPHEN KING","7144-3342-122"));
@@ -308,7 +309,7 @@ public class GUI_Libros extends javax.swing.JFrame {
                             .addGroup(TAB_FORMLayout.createSequentialGroup()
                                 .addGap(28, 28, 28)
                                 .addComponent(label_error_autor, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addContainerGap(205, Short.MAX_VALUE))
+                        .addContainerGap(208, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TAB_FORMLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(txt_codigo, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -471,6 +472,7 @@ public class GUI_Libros extends javax.swing.JFrame {
         int confirmacion = JOptionPane.showConfirmDialog(null, "¿Eliminar Libro?","Cuidado!",JOptionPane.YES_NO_OPTION);
         if (confirmacion == 0){
             LibroArray.eliminar(codigo);
+            JOptionPane.showMessageDialog(null, "Libro eliminado.");
             mostrarTablaLibros();
         }
         

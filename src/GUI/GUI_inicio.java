@@ -41,6 +41,7 @@ public class GUI_inicio extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         btnLibros = new javax.swing.JButton();
+        btnUsuarios = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -55,6 +56,14 @@ public class GUI_inicio extends javax.swing.JFrame {
             }
         });
 
+        btnUsuarios.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnUsuarios.setText("Usuarios");
+        btnUsuarios.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnUsuariosActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -66,7 +75,9 @@ public class GUI_inicio extends javax.swing.JFrame {
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 387, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(56, 56, 56)
-                        .addComponent(btnLibros, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnUsuarios, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnLibros, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(143, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -76,7 +87,9 @@ public class GUI_inicio extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addGap(38, 38, 38)
                 .addComponent(btnLibros, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(222, Short.MAX_VALUE))
+                .addGap(31, 31, 31)
+                .addComponent(btnUsuarios, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(146, Short.MAX_VALUE))
         );
 
         pack();
@@ -88,6 +101,13 @@ public class GUI_inicio extends javax.swing.JFrame {
         frm_libros.setLocationRelativeTo(null);
         frm_libros.setVisible(true);
     }//GEN-LAST:event_btnLibrosActionPerformed
+
+    private void btnUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUsuariosActionPerformed
+        // TODO add your handling code here:
+        GUI_Usuarios frm_usuario = new GUI_Usuarios();
+        frm_usuario.setLocationRelativeTo(null);
+        frm_usuario.setVisible(true);
+    }//GEN-LAST:event_btnUsuariosActionPerformed
 
     /**
      * @param args the command line arguments
@@ -126,6 +146,7 @@ public class GUI_inicio extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnLibros;
+    private javax.swing.JButton btnUsuarios;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

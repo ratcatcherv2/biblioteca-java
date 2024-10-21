@@ -3,9 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Asus%20Core%20i5/Documents/NetBeansProjects/gestion_biblioteca/src/Clases/Libro.java</file>
-            <file>file:/C:/Users/Asus%20Core%20i5/Documents/NetBeansProjects/gestion_biblioteca/src/Arreglos/LibrosArray.java</file>
+            <file>file:/C:/Users/Asus%20Core%20i5/Documents/NetBeansProjects/gestion_biblioteca/src/Clases/Usuario.java</file>
+            <file>file:/C:/Users/Asus%20Core%20i5/Documents/NetBeansProjects/gestion_biblioteca/src/GUI/GUI_Usuarios.java</file>
             <file>file:/C:/Users/Asus%20Core%20i5/Documents/NetBeansProjects/gestion_biblioteca/src/GUI/GUI_Libros.java</file>
+            <file>file:/C:/Users/Asus%20Core%20i5/Documents/NetBeansProjects/gestion_biblioteca/src/Arreglos/UsuarioLinked.java</file>
         </group>
     </open-files>
 </project-private>
